@@ -47,21 +47,6 @@ section:nth-child(even){
     text-transform: uppercase;
 }
 
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color:#fff;
-    background: var(--black);
-    border-radius: .5rem;
-    cursor: pointer;
-    padding:.8rem 3rem;
-}
-
-.btn:hover{
-    background: var(--green);
-    letter-spacing: .1rem;
-}
 
 header{
     position: fixed;
@@ -529,7 +514,7 @@ header .icons #menu-bars{
     resize: none;
 }
 
-.order form .btn{
+.order form {
     margin-top: 0;
 }
 
