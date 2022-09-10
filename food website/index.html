@@ -14,6 +14,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/food website/css/login.css">
 
 </head>
 
@@ -22,7 +23,7 @@
     <!-- header section starts      -->
 
     <header>
-        
+
         <a href="#" class="logo"><img src="images/logograu2.png" alt="" class="xxx"> </a>
 
         <nav class="navbar">
@@ -31,7 +32,7 @@
             <a href="#about">Sobre Nós</a>
             <a href="#menu">Cardápio</a>
             <a href="#review">clientes</a>
-            
+
         </nav>
 
         <div class="icons">
@@ -39,11 +40,36 @@
             <i class="fas fa-search" id="search-icon"></i>
             <a href="#" class="fas fa-home"></a>
             <a href="#" class="fas fa-heart"></a>
-            
-            
+            <button onclick="document.getElementById('janela').style.display='block'" style="width:auto;">
+                <b class="">Entrar</b>
+            </button>
+
+
+            <!-- Modal -->
+
+        </div>
+        <div id="janela" class="modal">
+            <form class="modal-content animate" action="" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('janela').style.display='none'" class="close"
+                        title="Close Modal">&times;
+                    </span>
+                    <img src="/food website/images/logograu2.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Administrador</b></label><br>
+                    <input type="text" id="name" placeholder="Administrador" name="uname" required><br>
+                    <label for="psw"><b>Código</b></label><br>
+                    <input type="password" id="senha" placeholder="Código" name="psw" required><br>
+                    <input class="buttom-form" id="cadastro" type="submit" value="Entrar">
+
+                </div>
+            </form>
         </div>
 
     </header>
+
+
 
     <!-- header section ends-->
 
@@ -315,9 +341,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h3>Curry Indiano                    </h3>
+                    <h3>Curry Indiano </h3>
                     <p>O Curry é um prato típico da Índia que os brasileiros amam!
-                        Hoje é um dos pratos mais vendidos do Marmita Fitness, e por isso decidimos criar a versão vegetariana pra ninguém perder essa delicia!
+                        Hoje é um dos pratos mais vendidos do Marmita Fitness, e por isso decidimos criar a versão
+                        vegetariana pra ninguém perder essa delicia!
                         Ah, e ele acompanha arroz coco!</p>
 
                     <span class="price">R$24,00</span>
@@ -338,7 +365,9 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h3>Moqueca Brasileira de Banana da Terra</h3>
-                    <p>Nossa deliciosa Moqueca Baiana Vegetariana de Banana da Terra. 🍌 Você não tem noção dessas bananas nesse molho, e para acompanhar: um creme de coco dos deuses! Só de escrever aqui me deu água na boca! </p>
+                    <p>Nossa deliciosa Moqueca Baiana Vegetariana de Banana da Terra. 🍌 Você não tem noção dessas
+                        bananas nesse molho, e para acompanhar: um creme de coco dos deuses! Só de escrever aqui me deu
+                        água na boca! </p>
 
                     <span class="price">R$24,00</span>
                 </div>
@@ -376,8 +405,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h3>Strogonoff Russo                    </h3>
-                    <p>SIM! 😱  O Strogonoff é um prato típico da Rússia.
+                    <h3>Strogonoff Russo </h3>
+                    <p>SIM! 😱 O Strogonoff é um prato típico da Rússia.
                         O Marmita mexeu os pauzinhos e o transformou num delicioso prato Vegetariano!
                         Esse você não pode perder!</p>
 
@@ -596,7 +625,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h3>Contra Coxa Grelhada e Risoto de Abobrinha</h3>
-                    <p>Suculentas sobre coxas desossadas, com aquele tempero caseiro que só o Marmita Fitness tem, acompanhado de um maravilho Risoto de Abobrinha.</p>
+                    <p>Suculentas sobre coxas desossadas, com aquele tempero caseiro que só o Marmita Fitness tem,
+                        acompanhado de um maravilho Risoto de Abobrinha.</p>
 
                     <span class="price">R$24,00</span>
                 </div>
@@ -636,7 +666,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h3>Frango ao Curry </h3>
-                    <p>A mistura do salgado com o doce que você respeita: Frango em cubos ao molho curry com arroz de coco: Uma combinação deliciosa de dá água na boca!.</p>
+                    <p>A mistura do salgado com o doce que você respeita: Frango em cubos ao molho curry com arroz de
+                        coco: Uma combinação deliciosa de dá água na boca!.</p>
 
                     <span class="price">R$24,00</span>
                 </div>
@@ -648,14 +679,14 @@
     <section class="menu" id="menu">
         <h3 class="sub-heading"> Nosso Menu </h3>
         <h1 class="heading"> Carnes </h1>
-        
-    
+
+
         <div class="box-container">
-    
+
             <div class="box">
                 <div class="image">
-                        <img src="images/Carnes/Caldo-De-Mandioca.jpeg" alt="">
-                        <a href="#" class="fas fa-heart"></a>
+                    <img src="images/Carnes/Caldo-De-Mandioca.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -667,11 +698,11 @@
                     </div>
                     <h3>Caldo de Mandioca Fit</h3>
                     <p>O Frio Chegou e com ele nosso Maravilhoso Caldo de Mandioca Fit. Saboroso e Saudável =)</p>
-    
+
                     <span class="price">R$18,00</span>
                 </div>
             </div>
-    
+
             <div class="box">
                 <div class="image">
                     <img src="images/Carnes/Escondidinho-de-Batata.jpeg" alt="">
@@ -688,7 +719,7 @@
                     <h3>Escondidinho de batata com carne moída</h3>
                     <p>O clássico e querido escondidinho de batata inglesa com molho de carne moída. É serio Marmita
                         Fitness?</p>
-    
+
                     <span class="price">R$22,00</span>
                 </div>
             </div>
@@ -707,7 +738,7 @@
                     </div>
                     <h3>Escondidimho de Abóbora</h3>
                     <p>Purê cremosíssimo de Abóbora com delicioso molho de Patinho em Cubos. E pasmem: LOW CARB! 😱</p>
-    
+
                     <span class="price">R$22,00</span>
                 </div>
             </div>
@@ -727,7 +758,7 @@
                     <h3>Yakisoba Fit</h3>
                     <p>De origem japonesa, o Yakisoba Fit nada mais é que um macarrão integral servido com diferentes
                         legumes, temperos e incrementado com molho Shoyu. Uma delícia! 😍 </p>
-    
+
                     <span class="price">R$22,00</span>
                 </div>
             </div>
@@ -746,11 +777,11 @@
                     </div>
                     <h3>Espaguete Integral á Bolonhesa</h3>
                     <p>Deliciosa massa integral com molho á bolonhesa que só o Marmita Fitness sabe fazer.</p>
-    
+
                     <span class="price">R$22,00</span>
                 </div>
             </div>
-    
+
             <div class="box">
                 <div class="image">
                     <img src="images/Carnes/Strogonoff-mignon.jpeg" alt="">
@@ -767,11 +798,11 @@
                     <h3>Strogonoff de Mignon Light</h3>
                     <p>Ninguém resiste a um strogonoff bem feitinho, com a carne macia, o molho cremoso e com cogumelos
                         fatiado. E o melhor: É FIT!</p>
-    
+
                     <span class="price">R$29,90</span>
                 </div>
             </div>
-    
+
             <div class="box">
                 <div class="image">
                     <img src="images/Carnes/File-mignon-madeira.jpeg" alt="">
@@ -788,15 +819,15 @@
                     <h3>Filé Mignon ao Molho Madeira</h3>
                     <p>O Chiquérrimo Filé Mignon ao Molho Madeira com Couve-Flor ao molho branco. Fitness e Saboroso! 😍
                     </p>
-    
+
                     <span class="price">R$29,90</span>
                 </div>
             </div>
-    
+
             <div class="box">
                 <div class="image">
                     <img src="images/Carnes/Patinho-Cozido.jpeg" alt="">
-    
+
                     <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
@@ -807,34 +838,34 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-    
+
                     <h3>Patinho Cozido</h3>
                     <p>Maravilhoso Patinho Cozido picadinho, com aquele Feijão caseirinho e um delicioso Arroz à
                         Grega bem temperadinho.</p>
-    
-    
+
+
                     <span class="price">R$22,00</span>
                 </div>
             </div>
-    
-    
+
+
         </div>
-    
+
     </section>
     <section class="menu" id="menu">
 
         <h3 class="sub-heading"> Nosso Menu </h3>
         <h1 class="heading"> Peixes & Sopas </h1>
-    
+
         <div class="box-container">
-    
+
             <div class="box">
                 <div class="image">
-                
-                 
-                        <img src="images/Peixe-Sopa/minestrone.jpeg" alt="">
-                      
-                        <a href="#" class="fas fa-heart"></a>
+
+
+                    <img src="images/Peixe-Sopa/minestrone.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -844,20 +875,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                 
-                        <h3>Minestrone</h3>
-                        <p>O Frio chegou e com ele uma Sopa de Legumes muito Deliciosa e muito Fitness!!</p>
-                      s
-    
-                        <span class="price">R$14,00</span>
+
+                    <h3>Minestrone</h3>
+                    <p>O Frio chegou e com ele uma Sopa de Legumes muito Deliciosa e muito Fitness!!</p>
+                    s
+
+                    <span class="price">R$14,00</span>
                 </div>
             </div>
             <div class="box">
                 <div class="image">
-                  
-                        <img src="images/Peixe-Sopa/sopa-acelera.jpeg" alt="">
-                       
-                        <a href="#" class="fas fa-heart"></a>
+
+                    <img src="images/Peixe-Sopa/sopa-acelera.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -867,163 +898,163 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                
-                        <h3>Sopa Acelera Metabolismo - Frango</h3>
-                        <p>Que tal dá uma acelerada no metabolismo para ajudar na dieta? Com essa sopa você consegue!
-                            Experimente! 😉</p>
-                     
-    
-                        <span class="price">R$14,00</span>
+
+                    <h3>Sopa Acelera Metabolismo - Frango</h3>
+                    <p>Que tal dá uma acelerada no metabolismo para ajudar na dieta? Com essa sopa você consegue!
+                        Experimente! 😉</p>
+
+
+                    <span class="price">R$14,00</span>
                 </div>
             </div>
-            
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/Peixe-Sopa/sopa-seca.jpeg" alt="">
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                        <div class="content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>Sopa Seca Barriga - Carne</h3>
-                            <p>Feita com legumes selecionados e todos LOW CARB, assim, não tem erro, seca barriga
-                                mesmo!!! 💪</p>
-    
-                            <span class="price">R$14,00</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/Peixe-Sopa/sopa-anti.jpeg" alt="">
-                            >>>>>>> Stashed changes
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                        <div class="content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                          
-                                <h3>Sopa Anti Inflamatória</h3>
-                                <p>O açafrão é uma raiz de cor laranja, que constitui um dos antioxidantes e
-                                    anti-inflamatórios mais poderosos do planeta e que parece apresentar mecanismos
-                                    ativos supressores das células cancerígenas, na diminuição da inflamação e dor
-                                    associada a osteoartrite. Experimente!!!</p>
-                                >>>>>>> Stashed changes
-    
-                                <span class="price">R$14,00</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/Peixe-Sopa/tilapia-pure.jpeg" alt="">
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                        <div class="content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>Tilápia com Purê de Batatas</h3>
-                            <p>Filé de Tilápia Grelhada no Azeite e uma crosta bem crocante de gergelim. Acompanha um
-                                delicioso purê de batata inglesa.</p>
-    
-                            <span class="price">R$24,00</span>
-                        </div>
-                    </div>
-    
-                <div class="box">
-                        <div class="image">
-                            <img src="images/Peixe-Sopa/tilapia-grelhada.jpeg" alt="">
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                        <div class="content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>Tilápia Grelhada</h3>
-                            <p>Filé de Tilápia grelhada no azeite com um toque de chimichurri, acompanhado de um
-                                delicioso arroz sete grãos á grega.</p>
-    
-                            <span class="price">R$24,00</span>
-                        </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/sopa-seca.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
-    
-                <div class="box">
-                    <div class="image">
-                        <img src="images/Peixe-Sopa/moqueca-tilapia.jpeg" alt="">
-                        <a href="#" class="fas fa-heart"></a>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>Moqueca de Tilápia com Farofa de Banana da Terra</h3>
-                        <p>Deliciosa Moqueca de Tilápia acompanhada de um arroz integral bem soltinho e uma Farofa de
-                            Banana da Terra!!! 🍌</p>
-    
-                        <span class="price">R$24,00</span>
-                    </div>
+                    <h3>Sopa Seca Barriga - Carne</h3>
+                    <p>Feita com legumes selecionados e todos LOW CARB, assim, não tem erro, seca barriga
+                        mesmo!!! 💪</p>
+
+                    <span class="price">R$14,00</span>
                 </div>
-    
-                <div class="box">
-                    <div class="image">
-                        <img src="images/Peixe-Sopa/risoto-alho.jpeg" alt="">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h3>Risoto de Alho Poró com Salmão</h3>
-                        <p>É gente, assim fica fácil de ser FIT!
-                            Apresento á vocês nosso queridinho 😍 juntamos o maravilhoso Risoto com Alho Poró e as
-                            nossas deliciosas Lascas de Salmão!
-                            Meu Deus, é bom demais pra ser verdade!</p>
-    
-                        <span class="price">R$32,00</span>
-                    </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/sopa-anti.jpeg" alt="">
+                    >>>>>>> Stashed changes
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
-    
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Sopa Anti Inflamatória</h3>
+                    <p>O açafrão é uma raiz de cor laranja, que constitui um dos antioxidantes e
+                        anti-inflamatórios mais poderosos do planeta e que parece apresentar mecanismos
+                        ativos supressores das células cancerígenas, na diminuição da inflamação e dor
+                        associada a osteoartrite. Experimente!!!</p>
+                    >>>>>>> Stashed changes
+
+                    <span class="price">R$14,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/tilapia-pure.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tilápia com Purê de Batatas</h3>
+                    <p>Filé de Tilápia Grelhada no Azeite e uma crosta bem crocante de gergelim. Acompanha um
+                        delicioso purê de batata inglesa.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/tilapia-grelhada.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Tilápia Grelhada</h3>
+                    <p>Filé de Tilápia grelhada no azeite com um toque de chimichurri, acompanhado de um
+                        delicioso arroz sete grãos á grega.</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/moqueca-tilapia.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Moqueca de Tilápia com Farofa de Banana da Terra</h3>
+                    <p>Deliciosa Moqueca de Tilápia acompanhada de um arroz integral bem soltinho e uma Farofa de
+                        Banana da Terra!!! 🍌</p>
+
+                    <span class="price">R$24,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/Peixe-Sopa/risoto-alho.jpeg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Risoto de Alho Poró com Salmão</h3>
+                    <p>É gente, assim fica fácil de ser FIT!
+                        Apresento á vocês nosso queridinho 😍 juntamos o maravilhoso Risoto com Alho Poró e as
+                        nossas deliciosas Lascas de Salmão!
+                        Meu Deus, é bom demais pra ser verdade!</p>
+
+                    <span class="price">R$32,00</span>
+                </div>
+            </div>
+
         </div>
-    
+
     </section>
     <section class="menu" id="menu">
 
         <h3 class="sub-heading"> Nosso Menu </h3>
         <h1 class="heading">Sucos</h1>
-    
+
         <div class="box-container">
-    
+
             <div class="box">
                 <div class="image">
-                
-                        <img src="images/sucos/maracuja.jpeg" alt="">
-                      
-                        <a href="#" class="fas fa-heart"></a>
+
+                    <img src="images/sucos/maracuja.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
                 </div>
                 <div class="content">
                     <div class="stars">
@@ -1032,84 +1063,88 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                    </div>
-                 
-                        <h3>Kit Suco Maracujá </h3>
-                        <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
-                      s
-    
-                        <span class="price">R$18,00</span>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                  
-                        <img src="images/sucos/graviola.jpeg" alt="">
-                       
-                        <a href="#" class="fas fa-heart"></a>
-                </div>
-                <div class="content">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                
-                        <h3>Kit Suco Graviola</h3>
-                        <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
-                     
-    
-                        <span class="price">R$18,00</span>
-                </div>
-            </div>
-            
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/sucos/morango.png" alt="">
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                        <div class="content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>Kit Suco Morango</h3>
-                            <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
-    
-                            <span class="price">R$18,00</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/sucos/abacaxi.jpeg" alt="">
-                          
-                            <a href="#" class="fas fa-heart"></a>
-                        </div>
-                        <div class="content">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                          
-                                <h3>Kit Suco Abacaxi com Hortelã</h3>
-                                <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
-                                
-    
-                                <span class="price">R$18,00</span>
-                        </div>
                     </div>
 
-    
+                    <h3>Kit Suco Maracujá </h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+                    s
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+
+                    <img src="images/sucos/graviola.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Kit Suco Graviola</h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/sucos/morango.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Kit Suco Morango</h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/sucos/abacaxi.jpeg" alt="">
+
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <h3>Kit Suco Abacaxi com Hortelã</h3>
+                    <p>Leve, refrescante, saudável e sem conservantes, as polpas de frutas são ótimas alternativas para
+                        quem não tem muito tempo para se dedicar na cozinha e não abre mão de se alimentar bem.</p>
+
+
+                    <span class="price">R$18,00</span>
+                </div>
+            </div>
+
+
         </div>
-    
+
     </section>
 
     <!-- menu section ends -->
@@ -1285,27 +1320,6 @@
     <div class="loader-container">
         <img src="images/loader.gif" alt="">
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->

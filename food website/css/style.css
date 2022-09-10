@@ -39,7 +39,7 @@ section:nth-child(even){
 .sub-heading{
     text-align: center;
     color:var(--green);
-    font-size: 2rem;
+    font-size: rem;
     padding-top: 1rem;
 }
 
@@ -585,39 +585,6 @@ header .icons #menu-bars{
     top:-110%;
     opacity:0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries  */
 
