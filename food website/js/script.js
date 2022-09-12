@@ -108,7 +108,7 @@ function cadastrar() {
   var senha = document.querySelector('#senha').value;
 
 
-  if (nome === 'Admin' && senha === 123) {
+  if (nome === 'admin' && senha === 123) {
     alert('login ok');
 
   }
