@@ -35,8 +35,10 @@
 }
 
 .btn.btn-primary {
+    width: 100px;
     color: #FFFFFF;
 }
+
 
 .btn-square {
     width: 38px;
