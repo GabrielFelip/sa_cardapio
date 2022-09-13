@@ -102,18 +102,16 @@ window.onclick = function (event) {
 }
 
 var botao = document.querySelector("#cadastro")
-botao.addEventListener('click', cadastrar)
-function cadastrar() {
+botao.addEventListener('click', cadastrar, false)
+function cadastrar(e) {
+  e.preventDefault();
   var nome = document.querySelector("#name").value;
-  var senha = document.querySelector('#senha').value;
-
-
-  if (nome === 'admin' && senha === 123) {
-    alert('login ok');
-
+  var senha = +document.querySelector('#senha').value;
+  if ((nome == 'Admin' || nome == 'admin' || nome == 'ADMIN') && senha === 123) { 
+    location.href = "/adm/index.html";
   }
-  else {
-
-  }
+  else{
+    alert("Login ou senha Incorreto")
+  } 
 }
 

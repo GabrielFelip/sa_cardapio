@@ -60,6 +60,10 @@ button {
   border-radius: 3%;
 }
 
+.button2:hover{
+  background-color: #03c27c;
+}
+
 .buttom-form {
   background-color: #04AA6D;
   width: 50%;
@@ -69,7 +73,9 @@ button {
   display: inline-block;
   box-sizing: border-box;
   height: 45px;
- 
+}
+.buttom-form:hover {
+  background-color: #03c27c;
 }
 
 button:hover {
