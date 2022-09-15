@@ -108,7 +108,7 @@ function cadastrar(e) {
   var nome = document.querySelector("#name").value;
   var senha = +document.querySelector('#senha').value;
   if ((nome == 'Admin' || nome == 'admin' || nome == 'ADMIN') && senha === 123) { 
-    location.href = "/adm/index.html";
+    location.href = "/admnist/index.html";
   }
   else{
     alert("Login ou senha Incorreto")
